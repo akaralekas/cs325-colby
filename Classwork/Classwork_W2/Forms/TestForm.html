@@ -1,0 +1,55 @@
+<!--
+Tony Karalekas
+CS325 Web-Programming
+
+Classwork
+Week 2
+
+"Test Forms" : search box like google
+testform.html
+
+Created: 1/16/17
+Last Update: 1/16/17
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+
+
+<p>Enter your search terms:</p>
+
+<form action="http://www.google.com/search" method="get">
+    <p>Name</p><input type="text" name="q"> <br><!--uses the name as a key for a table -->
+    <textarea rows="10" cols="20" name="ta">
+        Enter text here.
+    </textarea><br>
+
+    <label>Donate your life savings?<input type="checkbox" name="cb" checked="checked"></label><br>
+
+    <label>Mac<input type="radio" name="rb" value="0"></label>
+    <label>PC<input type="radio" name="rb" value="1"></label>
+    <label>Linux<input type="radio" name="rb" value="2"></label><br>
+
+    <select name="s">
+        <option>CS325</option>
+        <option>CS361</option>
+        <option>CS333</option>
+    </select><br>
+
+    <input type="file" name="f"><br>
+
+
+
+
+    <input type="submit" ><br> <!--these are special types that dont need any java -->
+    <input type="reset" ><br>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Tony Karalekas
+CS325 Web-Programming
+
+Classwork in Lab
+Week 1
+
+"My First Webpage"
+
+Created: 1/8/17
+Last Update: 1/9/17
+-->
+<html>
+
+<head>
+    <title> My first webpage. </title>
+    <!-- this is how to link a CSS stylesheet in the head piece of our HTML code -->
+    <link href="myfirstwebpage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- Link at the top of the page to scroll around into the document/separator
+the #Ollie will bring you to the part of ANY page linked here with Ollie in it-->
+<p><a href="#Ollie">Click Here</a></p>
+
+<!-- you can use classes to assign some but not all of the tags specific CSS styles; class can span over diff tags -->
+<p class="pinkItems"> paragraph 1</p>
+<p class="pinkItems"> paragraph 2</p>
+<p class="pinkItems"> paragraph 3</p>
+<p class="pinkItems"> paragraph 4</p>
+<p> paragraph 5</p>
+<p> paragraph 6</p>
+<p> paragraph 7</p>
+
+<h1> The <span id="whiteItem"> main </span> header. </h1>
+<!-- you can give a tag an id for helping distinguish with CSS; ID's must be unique -->
+
+<h1 id="special"> The second main header. </h1>
+<hr> <!-- No need for a closing tag with the horizontal line command -->
+
+<p> Hello world. <br> <em>This</em> is a <strong>paragraph.</strong> </p>
+<!-- the <br> command breaks the text into another line, this is an inline command w/o closing tag -->
+<!-- <em> italics and <strong> bold help emphasize the look of the text -->
+
+<!-- <ul> un-ordered list and <ol> ordered list-->
+<ol>
+    <li>bread</li>
+    <li>milk</li>
+    <li>apples</li>
+</ol>
+
+<!-- definition list, definition term<dt> and definition data <dd> -->
+<dl>
+    <dt>CS</dt><dd>computer science</dd>
+    <dt>OS</dt><dd>operating system </dd>
+</dl>
+
+<!-- &quot; is a quote paragraph or <q> tag for quotes -->
+<p>&quot;Success is not final. Fear is not fatal. It is the courage to continue that counts.&quot; --Churchill </p>
+<p><q>Success is not final. Fear is not fatal. It is the courage to continue that counts.</q>--Churchill </p>
+
+<!-- block quote ; citation is included separately hidden in html, not displayed <cite> -->
+<p><blockquote id="block" cite="John Muir"> The world is big and I want to have a good look at it before it gets dark </blockquote>
+
+
+<!-- <code> is for putting CS code on a webpage in specific font -->
+<!-- the <pre> tag is useful for keeping the original format of text including spaces/indents -->
+<pre><code>
+	for(int i = 0; i < n; i++) {
+		System.out.println(i);
+	}
+	</code></pre>
+
+<!-- links tag <a> : this is the concept of an attribute, href is the name for links-->
+<a id="Ollie" href="http://espn.com">
+    <img src="OllieAndRosesSmall.png"
+         alt="A picture of Ollie and Roses"> <!-- the <alt> tag allows to provide alternate if image file changes describing what would be there -->
+</a>
+
+<!--special characters -->
+<p> The less than sign: &lt; </p>
+<p> The greater than sign: &gt; </p>
+<p> The ampersand sign: &amp; </p>
+<p> The pi symbol: &pi; </p>
+
+<table>
+    <caption>Office hours</caption>
+    <tr><th>Day</th><th>Time</th></tr>
+    <tr><td>Mon</td><td>1-3pm</td></tr>
+    <tr><td>Wed</td><td>1-2pm</td></tr>
+</table>
+
+
+</body>
+
+</html>

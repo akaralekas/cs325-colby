@@ -1,0 +1,75 @@
+/*
+Tony Karalekas
+CS325 Web-Programming
+
+Classwork in Lab
+Week 1
+
+CSS Stylesheet
+"My First Webpage"
+
+Created: 1/9/17
+Last Update: 1/9/17
+ */
+
+
+/* borders and outlines for tables
+--padding
+*/
+p {
+    padding: 15px;
+    margin: 20px;
+    border: 30px solid black;
+}
+table, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+/* this is a selector for CSS, can put multiple selectors with single style assignments,
+--can use RGB values as well as hexadecimal values
+--background images
+*/
+body { color:red;
+    background-color: rgba(15, 84, 100, 0.55);
+    /*background-image: url("images/bkgd.jpg");*/
+}
+
+/* for font you can use px, pt, or % of default size; can also use vague names like "smaller" */
+/* texxt-align allows you to format around the screen */
+h1 { color: green;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* this ## tells the CSS to look for an id special */
+#special {color: yellow; }
+
+/* this period (.) tells the CSS to look for an class special */
+/* using the p.class here adds a restriction to ONLY paragraph tags with the class get this style */
+p.pinkItems {color: pink}
+
+/* SPAN is a inline tag that allows you to change certain things in a single line [DIV is the same but with BLOCK]*/
+#whiteItem {color: white}
+
+
+/* this is how to customize the bullet points in lists */
+ul {
+    list-style-type:square;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+/* spacing */
+#block {
+    line-height: 20px;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}

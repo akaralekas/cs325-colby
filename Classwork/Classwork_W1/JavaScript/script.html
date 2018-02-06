@@ -1,0 +1,100 @@
+<!--
+Tony Karalekas
+CS325 Web-Programming
+
+Classwork in Lab
+Week 1
+
+"JavaScript Lesson"
+script.html
+
+Created: 1/11/17
+Last Update: 1/11/17
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+
+<!-- javascript practice -->
+<script>
+    var x = 3;
+    // line comment
+    /* block comment */
+
+//=================================================
+    /* --Looping code--
+    var s= 1;
+    for(var i=0; i<10; i++){
+        s += i;
+    }
+    document.write(s)
+    */
+
+
+//=================================================
+    /* --Function code--
+    var x = 3.3333;
+    function foo(y, z) {
+        var x = arguments[0];
+        document.write(x);
+    }
+    foo(4,5,6);
+    */
+
+
+//==================================================
+    /* --Array code--
+    var x = 3.3333;
+    var a = [1,2,3,4];
+
+    for (var x in a) {
+        document.write(x) //equivalent to a for each loop
+    }
+
+    //array methods are very similar to python
+    a.push(5); //add to end of the array
+    var b = a.pop(); //get off the last value of array
+    a.sort();
+
+    //indexed lists
+    a[10] = 5;
+    a.length; //length is 11 but on 5 data pieces
+    a["hi"] = 6; //this makes an array behave like a dictionary
+    //an array is mainly stored with integer data, but can act like an indexed library....DONT DO THIS
+    */
+
+
+//===================================================
+    /* --Object (dictionary) code--
+    obj = {0:'hI', "b":4, "c":undefined};
+    for(var key in object)
+        document.write(obj[key]);
+    */
+
+
+//=======================================================
+    /* --Interesting Global Functions---
+    //global function that displays a alert message
+    alert("ALERT! ALERT!")
+
+    //confirm dialogue box
+    confirm();
+
+    //prompt dialogue box
+    prompt();
+    */
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
