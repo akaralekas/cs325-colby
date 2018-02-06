@@ -1,0 +1,45 @@
+<!--
+Tony Karalekas
+CS325 Web-Programming
+
+Homework Labs
+Lab 4
+
+"Catch a Square"
+catchasquare.html
+
+Created: 1/15/17
+Last Update: 1/15/17
+-->
+
+
+<!--
+Author: Marty Stepp
+Modified by: Dale Skrien
+Labwork by: Tony Karalekas
+-->
+
+
+<!DOCTYPE html >
+<html>
+
+	<head>
+		<title>Catch a rectangle</title>
+
+		<link rel="stylesheet" href="catchsquare.css" type="text/css" />
+
+		<script src="catchsquare.js"></script>
+	</head>
+
+	<body>
+		<p>Click a rectangle before it disappears.<br />
+            You have 3 seconds to click the moving square after it appears.<br />
+            With each click, the square will begin to move faster <br/>
+            The game is over when you fail to click a rectangle in under 3 seconds<br />
+            <span id="message">The game starts in 5 seconds.</span></p>
+
+		<div class="rectanglearea" id="rectanglearea"></div>
+		<p>Number of rectangles caught: <span id="result">0</span></p>
+
+	</body>
+</html>

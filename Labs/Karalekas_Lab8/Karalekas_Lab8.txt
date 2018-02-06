@@ -1,0 +1,255 @@
+Tony Karalekas
+1/23/18
+CS325 Web Programming
+Lab 8
+
+#1)
+MariaDB [ajkarale]> select id, first_name, last_name, gender from actors where first_name="Julia";
++--------+------------+------------------+--------+
+| id     | first_name | last_name        | gender |
++--------+------------+------------------+--------+
+| 572929 | Julia      | Carothers Hughes | F      |
+| 770247 | Julia      | Roberts          | F      |
+| 784772 | Julia      | Schuler          | F      |
+| 806043 | Julia      | Sweeney          | F      |
++--------+------------+------------------+--------+
+4 rows in set (0.00 sec)
+
+#2)
+MariaDB [ajkarale]> select id, name from movies where year > 1994 and year < 2001;
++--------+----------------------------+
+| id     | name                       |
++--------+----------------------------+
+|  18979 | Apollo 13                  |
+|  46169 | Braveheart                 |
+| 109093 | Fargo                      |
+| 112290 | Fight Club                 |
+| 147603 | Hollow Man                 |
+| 207992 | Matrix, The                |
+| 210511 | Memento                    |
+| 237431 | O Brother, Where Art Thou? |
+| 238695 | Office Space               |
+| 254943 | Pi                         |
+| 306032 | Snatch.                    |
+| 314965 | Stir of Echoes             |
+| 333856 | Titanic                    |
++--------+----------------------------+
+13 rows in set (0.00 sec)
+
+#3)
+MariaDB [ajkarale]> select actor_id from roles where movie_id = "112290";
++----------+
+| actor_id |
++----------+
+|    12508 |
+|    17438 |
+|    17946 |
+|    23488 |
+|    33024 |
+|    43967 |
+|    46793 |
+|    52396 |
+|    66495 |
+|    72356 |
+|    86866 |
+|    92815 |
+|   114701 |
+|   117395 |
+|   122803 |
+|   150046 |
+|   152175 |
+|   174382 |
+|   180149 |
+|   184634 |
+|   201013 |
+|   220339 |
+|   247608 |
+|   256240 |
+|   266368 |
+|   275713 |
+|   281243 |
+|   284337 |
+|   290848 |
+|   292815 |
+|   304444 |
+|   308329 |
+|   313126 |
+|   313969 |
+|   323403 |
+|   328405 |
+|   347943 |
+|   356562 |
+|   367572 |
+|   376249 |
+|   378974 |
+|   385911 |
+|   389753 |
+|   392786 |
+|   402498 |
+|   403180 |
+|   406971 |
+|   438105 |
+|   443594 |
+|   454061 |
+|   469664 |
+|   471342 |
+|   510575 |
+|   514278 |
+|   553953 |
+|   558289 |
+|   558382 |
+|   569014 |
+|   572783 |
+|   589158 |
+|   606081 |
+|   780070 |
+|   793011 |
++----------+
+63 rows in set (0.00 sec)
+
+#4)
+MariaDB [ajkarale]> select role from roles join movies on 
+movies.id = roles.movie_id where movies.name= "Pi";
++-------------------------+
+| role                    |
++-------------------------+
+| Man Delivering Suitcase |
+| Brad                    |
+| Transit Cop             |
+| Maximillian Cohen       |
+| Kabbala Scholar         |
+| Moustacheless Man       |
+| Man Presenting Suitcase |
+| Limo Driver             |
+| Kabbala Scholar         |
+| Photographer            |
+| Sol Robeson             |
+| King Neptune            |
+| Farroukh                |
+| Rabbi Cohen             |
+| Kabbala Scholar         |
+| Kabbala Scholar         |
+| Transit Cop             |
+| Lenny Meyer             |
+| Kabbala Scholar         |
+| Jake                    |
+| Ephraim                 |
+| Jenny Robeson           |
+| Mrs. Ovadia             |
+| Marcy Dawson            |
+| Jenna                   |
+| Jenna's Mom             |
+|                         |
+| Devi                    |
++-------------------------+
+28 rows in set (0.00 sec)
+
+#5)
+MariaDB [ajkarale]> select actors.first_name, actors.last_name, roles.role from 
+actors join roles on roles.actor_id = actors.id join movies on 
+movies.id = roles.movie_id where movies.name = "Pi";
++------------------+------------+-------------------------+
+| first_name       | last_name  | role                    |
++------------------+------------+-------------------------+
+| Abraham          | Aronofsky  | Man Delivering Suitcase |
+| Peter            | Cheyenne   | Brad                    |
+| Scott            | Franklin   | Transit Cop             |
+| Sean             | Gullette   | Maximillian Cohen       |
+| Ari              | Handel     | Kabbala Scholar         |
+| Stanley          | Herman     | Moustacheless Man       |
+| J.C.             | Islander   | Man Presenting Suitcase |
+| Chris (IV)       | Johnson    | Limo Driver             |
+| Richard          | Lifschutz  | Kabbala Scholar         |
+| Clint            | Mansell    | Photographer            |
+| Mark             | Margolis   | Sol Robeson             |
+| Sal              | Monte      | King Neptune            |
+| Ajay             | Naidu      | Farroukh                |
+| Stephen          | Pearlman   | Rabbi Cohen             |
+| Oren             | Sarch      | Kabbala Scholar         |
+| Lloyd            | Schwartz   | Kabbala Scholar         |
+| Ray              | Seiden     | Transit Cop             |
+| Ben (II)         | Shenkman   | Lenny Meyer             |
+| David            | Strahlberg | Kabbala Scholar         |
+| David            | Tawil      | Jake                    |
+| Tom (I)          | Tumminello | Ephraim                 |
+| Lauren (I)       | Fox        | Jenny Robeson           |
+| Joanne           | Gordon     | Mrs. Ovadia             |
+| Pamela (II)      | Hart       | Marcy Dawson            |
+| Kristyn Mae-Anne | Lao        | Jenna                   |
+| Espher Lao       | Nieves     | Jenna's Mom             |
+| Pam              | Shoaib     |                         |
+| Samia            | Shoaib     | Devi                    |
++------------------+------------+-------------------------+
+28 rows in set (0.01 sec)
+
+#6)
+MariaDB [ajkarale]> select actors.first_name, actors.last_name from actors 
+join roles r1 on r1.actor_id = actors.id join roles r2 on r2.actor_id = actors.id 
+join movies m1 on m1.id = r1.movie_id join movies m2 on m2.id = r2.movie_id 
+where m1.name = "Kill Bill: Vol. 1" and m2.name = "Kill Bill: Vol. 2";
++-------------------+-----------+
+| first_name        | last_name |
++-------------------+-----------+
+| David             | Carradine |
+| Chia Hui          | Liu       |
+| Michael (I)       | Madsen    |
+| Christopher Allen | Nelson    |
+| Michael (I)       | Parks     |
+| Stevo             | Polyi     |
+| Vivica A.         | Fox       |
+| Daryl             | Hannah    |
+| Lucy              | Liu       |
+| Uma               | Thurman   |
++-------------------+-----------+
+10 rows in set (0.00 sec)
+
+#7) IN ATTACHED PHP FILE "karalekas_lab8.php"
+Also, it is on my web server so you can run the php file and it will work!
+
+#8)
+MariaDB [ajkarale]> select grade from grades join courses on courses.id = 
+grades.course_id where courses.name= "Computer Science 143";
++-------+
+| grade |
++-------+
+| C     |
+| A+    |
++-------+
+2 rows in set (0.00 sec)
+
+#9)
+MariaDB [ajkarale]> select students.name, grades.grade from grades join 
+courses on courses.id = grades.course_id join students on students.id = grades.student_id 
+where courses.name= "Computer Science 143" and grade <= "B-";
++------+-------+
+| name | grade |
++------+-------+
+| Lisa | A+    |
++------+-------+
+1 row in set (0.00 sec)
+
+#10)
+MariaDB [ajkarale]> select students.name, grades.grade, courses.name from 
+grades join courses on courses.id = grades.course_id join 
+students on students.id = grades.student_id where grade <= "B-" order by students.name;
++----------+-------+-----------------------+
+| name     | grade | name                  |
++----------+-------+-----------------------+
+| Bart     | B-    | Computer Science 142  |
+| Lisa     | A+    | Computer Science 143  |
+| Lisa     | A+    | Computer Science 190M |
+| Milhouse | B+    | Computer Science 142  |
++----------+-------+-----------------------+
+4 rows in set (0.00 sec)
+
+#11)
+MariaDB [ajkarale]> select distinct courses.name from courses join 
+grades on grades.course_id = courses.id group by grades.student_id 
+having count(grades.student_id)>1;
++----------------------+
+| name                 |
++----------------------+
+| Computer Science 142 |
+| Computer Science 143 |
++----------------------+
+2 rows in set (0.00 sec)

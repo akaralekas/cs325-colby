@@ -1,0 +1,171 @@
+<!--
+Tony Karalekas
+CS325 Web-Programming
+
+Lab Homeworks
+Lab 5
+
+"Ticket Giveaway"
+Working with Forms, JQuery, and Validation
+
+lab5.html
+
+Created: 1/17/17
+Last Update: 1/17/17
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Giveaway</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            type="text/js"></script>
+
+    <script src="lab5.js" type="text/js"></script>
+
+    <link rel="stylesheet" href="lab5.css" type="text/css"/>
+
+</head>
+<body>
+
+<h1>E-Z Tix!</h1>
+<img class="pic1" src="crowd.png" alt="Crowd"/>
+<h3>Monthly Ticket Giveaways</h3>
+<img class="pic2" src="ticket.png" alt="Ticket"/>
+<h3>Enter your information below for a chance to win free tickets!</h3>
+
+<p>Sign-Up Below!:</p>
+
+<form action="localhost" id="myform">
+
+    <label>Full Name: </label><input type="text" name="name"> <br><!--uses the name as a key for a table -->
+
+    <label>E-mail: </label><input type="text" name="email"
+                                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                  title="characters followed by an @ sign,
+                                  followed by more characters, and then a (.) "
+                                  required> <br>
+
+
+    <label>Username: </label><input type="text" name="username"
+                                    pattern="[a-zA-Z0-9]{6,}" title="Six or more characters"><br>
+
+
+    <label>Password: </label><input id="pass" type="password" name="pass"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must be at least 8 characters long and
+                                    contain at least 1 number and 1 uppercase and
+                                    lowercase letter"
+                                    required><br>
+
+
+    <label>Confirm: </label><input id="confirmpass" type="password" name="confirmpass"
+                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                   title="Must be at least 8 characters long and
+                                   contain at least 1 number and 1 uppercase and
+                                   lowercase letter"
+                                   required><br>
+
+
+    <label>Zip Code: </label><input type="text" name="pass"
+                                    pattern="\d{5}([\-]\d{4})?"
+                                    title="format is ##### or #####-####"
+                                    required><br>
+
+    <textarea rows="20" cols="50" name="ta">
+        Enter short description of tickets you would like to see:
+    </textarea><br>
+
+    <p>Choose your favorites types of events:</p>
+    <label>Sports<input id="cb1" type="checkbox" name="cb1"></label>
+    <label>Concerts<input id="cb2" type="checkbox" name="cb2"></label>
+    <label>Festivals<input id="cb3" type="checkbox" name="cb3"></label>
+    <label>Arts<input id="cb4" type="checkbox" name="cb4"></label>
+    <label>Food<input id="cb5" type="checkbox" name="cb5"></label>
+
+
+    <p>How many events do you attend a month?:</p>
+    <label>1<input type="radio" name="rb" value="0"></label>
+    <label>2<input type="radio" name="rb" value="1"></label>
+    <label>3 or more<input type="radio" name="rb" value="2"></label><br>
+
+
+    <p>Pick your preferences:</p>
+    <label class="s1" >Sport: </label>
+    <select class="s1" name="sport">
+        <option>Basketball</option>
+        <option>Football</option>
+        <option>Baseball</option>
+        <option>Soccer</option>
+        <option>Hockey</option>
+        <option>Boxing</option>
+    </select>
+    <label class="s2">Music Genre: </label>
+    <select class="s2" name="genre">
+        <option>Hip-Hop/Rap</option>
+        <option>EDM/Dance</option>
+        <option>Rock</option>
+        <option>Folk, Blues, & Jazz</option>
+        <option>Alternative</option>
+        <option>Acoustic</option>
+    </select>
+    <label class="s3" >Festival Region: </label>
+    <select class="s3" name="region">
+        <option>New England</option>
+        <option>New York</option>
+        <option>California</option>
+        <option>Europe!</option>
+        <option>Florida</option>
+        <option>Mid-West</option>
+        <option>South</option>
+    </select>
+    <label class="s4" >Art: </label>
+    <select class="s4" name="art">
+        <option>Museums</option>
+        <option>Theatre</option>
+        <option>Opera</option>
+        <option>Art Shows</option>
+        <option>Architecture</option>
+    </select>
+    <label class="s5" >Food: </label>
+    <select class="s5" name="food">
+        <option>Beer Festivals</option>
+        <option>BBQ</option>
+        <option>Wine Tasting</option>
+        <option>Cheese</option>
+        <option>Pizza</option>
+        <option>All Food</option>
+    </select>
+    <br>
+
+
+    <input type="submit" ><br> <!--these are special types that dont need any java -->
+
+
+    <p> FOR GRADER --> Here is a list of things I did:</p>
+    <ol>
+        <li>In the password field I made it "type=password" so the words were hidden</li>
+        <li>Password Rule: at least 8 characters, 1 upper, 1 lower, 1 number</li>
+        <li>Email Rule: characters followed by an @ sign, followed by more characters, and then a "."</li>
+        <li>Username Rule: at least 6 characters</li>
+        <li>Zip Code Rule: 5 numbers of 5numbers-4numbers (with a dash)</li>
+        <li>Compulsory: I made Email, Password, and Zip-Code required (can't submit without)</li>
+        <li>Jquery 1: password and confirm pass MUST match, if not, alert displayed </li>
+        <li>Jquery2: When you toggle favorites, listboxes of corresponding preferences toggle on/off </li>
+    </ol>
+    <br>
+    <p class="note"> NOTE: these validations are upon submission, not in real time.
+        So, test the required fields. <br> The, you must fill out the required fields CORRECTLY
+        and then test each of the other validations.</p>
+</form>
+
+<!-- Valid class for formatting the validators -->
+<div class="valid">
+    <a href="https://validator.w3.org/"><img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML5" /></a><br />
+    <a href="https://jigsaw.w3.org/css-validator/"><img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS" /></a>
+</div>
+
+</body>
+</html>

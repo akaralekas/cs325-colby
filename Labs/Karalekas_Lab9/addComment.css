@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document
+ * Author:  Dale Skrien
+ * CS 325 Lab 7
+ */
+
+form {
+    font-family: "Helvetica", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    font-family: "Helvetica", sans-serif;
+}
+
+legend {
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 3px;
+    border: solid 1px;
+    font-family: "Helvetica", sans-serif;
+}
+
+fieldset {
+    margin-top: 30px;
+    background-color: #FFCCFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    border: solid black 1px;
+}
+
+dl {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    font-size: 14pt;
+    margin-left: 8em;
+}
+
+input[type="reset"] {
+    font-size: 14pt;
+}
+
+.commentbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 5px;
+    border: solid 1px black;
+    background-color: rgb(200, 255, 255);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.usercomment {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16pt;
+    margin: 0px;
+}
+
+.username {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    float: right;
+    font-size: 14pt;
+    margin: 0px;
+}
+
+.date {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    float: left;
+    font-size: 10pt;
+    margin: 0px;
+    padding-top: 14px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 14pt;
+}
+
+#w3c {
+    text-align: right;
+    margin-top: 10px;
+}

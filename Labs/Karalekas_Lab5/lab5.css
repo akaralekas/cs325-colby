@@ -1,0 +1,87 @@
+/*
+Tony Karalekas
+CS325 Web-Programming
+
+Lab Homeworks
+Lab 5
+
+"Ticket Giveaway"
+Working with Forms, JQuery, and Validation
+
+lab5.css: stylesheet
+
+Created: 1/17/17
+Last Update: 1/17/17
+*/
+
+body{
+    background-color: #ffdb83;
+    font-family: Verdana Tahoma sans-serif;
+}
+
+.pic1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.pic2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+p {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+
+}
+
+h1{
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Verdana Tahoma sans-serif;
+    color: #ff4520;
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+    font-family: Verdana Tahoma sans-serif;
+    color: #3ba29c;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    line-height: 30pt;
+}
+
+ol{
+    text-align: center;
+    list-style-position: inside;
+    color: red;
+}
+
+
+/* The Listboxes of Preferences begin hidden, then toggled with Jquery*/
+.s1, .s2, .s3, .s4, .s5{
+    display: none;
+}
+
+.note{
+    text-align: center;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* the CSS and HTML validators */
+.valid{
+    position: fixed; /* Fixed position */
+    bottom: 0px;
+    right: 0px; /* right side of page */
+    opacity: 0.5; /* 50% opaque */
+}

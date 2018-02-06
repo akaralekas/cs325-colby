@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+Tony Karalekas
+CS325 Web-Programming
+Lab HW Assignments
+
+Lab 1
+"About Me" HTML
+
+Created: 1/8/17
+Last Update: 1/9/17
+-->
+
+<!--
+---
+                  !!!!!!!!!!! NOTE TO GRADER !!!!!!
+----
+Because the maximum upload size on moodle is 100MB, I had to leave out the bridge_jumping.ogg file to sumbit.
+In order for the video to play, you must simply duplicate the bridge_jumping.mov file and change the ending
+to a .ogg so then you will have both a bridge_jumping.mov file and a bridge_jumping.ogg file
+--->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS325 Lab 1: About Me</title>
+    <!-- this is how to link a CSS stylesheet in the head piece of our HTML code -->
+    <link href="aboutme.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- Name and favorite quote -->
+<body>
+
+<div class="nav-bar">
+    <p class="links">
+        <a href="#about">About</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#travel">Travel</a>
+    </p>
+</div>
+
+<h1 id="Name"> Anthony J. Karalekas </h1>
+
+<img id="headshot" src="professional_headshot.png" width="250" height="250" alt="Picture of Me"/>
+
+<p id="winston">"Success is not final. Failure is not fatal. It is the courage to continue that counts." --Winston Churchill</p>
+
+
+<!-- Audio Tag -->
+<hr>
+<h2> Pick a song and learn more about me!</h2>
+<div class="songs">
+    <h3 class="song" id="song1">Autumn Leaves by Ed Sheeran</h3>
+    <h3 class="song" id="song2">Woods by Bon Iver</h3>
+    <h3 class="song" id="song3">Red Dust by James Vincent McMorrow</h3>
+
+    <img class="album" src="edsheeran.png" alt="Album Cover"/>
+    <img class="album" src="boniver.png" alt="Album Cover"/>
+    <img class="album" src="jvm.png" alt="Album Cover"/>
+
+    <p class="song">Listen while you read my page!</p>
+    <p class="song">Listen while you read my page!</p>
+    <p class="song">Listen while you read my page!</p>
+
+    <audio controls class="song">
+        <source src="Autumn_Leaves.ogg" type="audio/ogg">
+        <source src="Autumn_Leaves.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio controls class="song">
+        <source src="Woods.ogg" type="audio/ogg">
+        <source src="Woods.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio controls class="song">
+        <source src="Red_Dust.ogg" type="audio/ogg">
+        <source src="Red_Dust.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+
+
+<!-- About Me Section -->
+<hr>
+<h2 id="about">About Me</h2>
+<p id="aboutme">
+    Hello, my name is My name is <strong>Tony Karalekas</strong>, I am 23 years old, and I am from <em>Florida</em> and
+    I’m a senior at <strong>Colby College</strong> where I am completing an Economics/Financial Markets major
+    and a <strong>Computer Science minor</strong>. Outside of the classroom, I am a <em>(retired)</em> member of the men’s basketball team,
+    a front-desk attendant at the gymnasium, and an active partner of Mayflower Hill Captial,
+    a student-run, on-campus investment fund. My hobbies photography, hiking, and music and during
+    my semester abroad in Italy, I got super into <em>photography</em> and have started my own photography streams on
+    <a href="https://www.flickr.com/photos/ajkaralekas_photography"> Flickr</a>, and <a href="https://www.instagram.com/_tkphoto_/"> Instagram</a>.
+    After graduation in May, I will be moving to San Francisco, California to work as a Markets Analyst for Citigroup.
+</p>
+
+
+<!-- Fall Class List (table tags) -->
+<hr>
+<h2>Education </h2>
+
+<h3 class="education"> Fall 2017 Classes </h3>
+<h3 class="education"> College </h3>
+<h3 class="education"> High School </h3>
+
+<table class="classes">
+    <tr><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID</th><th>Name</th></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        EC393</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Econometrics</td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        EC338</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Money and Banking</td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        CS481</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS Capstone: Mule Munchies</td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        IT235</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italian Conversation</td></tr>
+</table>
+<img class="school" src="colby.png" alt="College Emblem"/>
+<img class="school" src="exeter.png" alt="Exeter Seal"/>
+
+
+<p class="schools">Phillips Exeter Academy</p>
+<p class="schools">Economics/Finance Major and CS Minor</p>
+<p class="schools">Colby College</p>
+
+<!-- List of Favorites -->
+<hr>
+<h2 id="favorites"> Favorites </h2>
+
+<h3 class="favorites"> Favorite Movies (Youtube) </h3>
+<h3 class="favorites"> Favorite TV Shows</h3>
+<h3 class="favorites"> Favorite Athletes</h3>
+
+<img class="fav" src="lotr.gif" alt="gif"/>
+<img class="fav" src="tyrion.gif" alt="gif"/>
+<img class="fav" src="gronk.gif" alt="gif"/>
+
+<ol class="favlists1">
+    <li><a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo"> Lord of the Rings: Return of the King</a> </li>
+    <li><a href="https://www.youtube.com/watch?v=S5CjKEFb-sM"> Imitation Game</a> </li>
+    <li><a href="https://www.youtube.com/watch?v=LtJ60u7SUSw"> Darkest Hour </a> </li>
+</ol>
+
+<ol class="favlists2">
+    <li> <a href="http://www.imdb.com/title/tt0944947/"> Game of Thrones</a>, George RR Martin </li>
+    <li> <a href="http://www.imdb.com/title/tt0944947/">Westworld</a></li>
+    <li> <a href="http://www.imdb.com/title/tt4370528/">The Five</a>, Harlan Coban</li>
+</ol>
+
+<ol class="favlists3">
+    <li><a href="http://www.espn.com/nfl/player/stats/_/id/13229/rob-gronkowski"> Rob Gronkowski</a> </li>
+    <li><a href="https://stats.nba.com/player/202681/"> Kyrie Irving</a> </li>
+    <li><a href="https://stats.nba.com/player/203507/"> Giannis Antetokounmpo </a> </li>
+</ol>
+
+
+<!-- Travel Section, my travel blog, picture link tags -->
+<hr>
+<h2 id="travel"> <a href="https://tleektravel.wordpress.com/"> TRAVELS</a></h2>
+<p class="travels">
+    After a semester abroad in Milan, Italy I fell in love with traveling and photography. Click the link above to read my Travel Blog.
+    Here are two of my favorite pictures from abroad. Click on the images to read my blog post from each destination!
+</p>
+<a class="blog" href="https://tleektravel.wordpress.com/2017/11/22/the-homeland-greece/">
+    <img src="santorini.jpg" width="500" height="400" alt="Picture of Santorini"/>
+</a>
+<a class="blog" href="https://tleektravel.wordpress.com/2017/11/22/easter-break-in-amalfi/">
+    <img src="capri.jpg" width="500" height="400" alt="Picture of Capri"/>
+</a>
+<h5 class="captions">Santorini, Greece</h5>
+<h5 class="captions">Capri, Italy</h5>
+
+
+
+<!-- My Neighbor Section -->
+<hr>
+<h2>My Neighbor Gerry Nvule</h2>
+<img id="gerry" src="gerry.png" width="200" height="200" alt="Picture of Gerry"/>
+<ul class="gerry">
+    <li>Gerry Nvule is a junior from Boston, Massachusetts</li>
+    <li>His hobbies include: editing and producing music, reading, and running.</li>
+    <li>Gerry just got back from a semester abroad in Salamanca, Spain.
+        Check out his awesome <a href="https://www.instagram.com/gbn07/">instagram</a> </li>
+</ul>
+
+
+
+<!-- Video tag extension -->
+<hr>
+<h2>Bridge Jumping Video</h2>
+<video class="video" width="400" controls>
+    <source src="bridge_jumping.mov" type="video/mov">
+    <source src="bridge_jumping.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+</video>
+<p class="video">
+    Video editing courtesy of
+    <a href="https://www.gopro.com/" target="_blank">GoPro</a>.
+    </p>
+
+<!-- GIF  extension -->
+<hr>
+    <h2> Thanks for Reading!! </h2>
+    <img class="shaq" src="shaq.gif" width="200" height="200" alt="Picture of Gerry"/>
+    <img class="shaq" src="shaq.gif" width="200" height="200" alt="Picture of Gerry"/>
+    <img class="shaq" src="shaq.gif" width="200" height="200" alt="Picture of Gerry"/>
+    <img class="shaq" src="shaq.gif" width="200" height="200" alt="Picture of Gerry"/>
+    <img class="shaq" src="shaq.gif" width="200" height="200" alt="Picture of Gerry"/>
+    <img class="shaq" src="shaq.gif" width="200" height="200" alt="Picture of Gerry"/>
+    <h5> Last updated: Janurary 9th, 2017</h5>
+<hr>
+
+
+<!-- Validator Badges -->
+<p>
+    <a href="http://validator.w3.org/check/referer">
+        <img src="http://webster.cs.washington.edu/w3c-html.png"
+             alt="Validate" />
+    </a>
+</p>
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+             width="88" height="31" alt="Validate CSS" />
+    </a>
+</p>
+
+</body>
+</html>

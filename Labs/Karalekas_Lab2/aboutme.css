@@ -1,0 +1,266 @@
+/*
+Tony Karalekas
+CS325 Web-Programming
+Lab HW Assignments
+
+Lab 2
+CSS Stylesheet
+"About Me" with CSS
+
+Created: 1/9/17
+Last Update: 1/9/17
+ */
+body {
+    background-color: rgba(15, 84, 100, 0.55);
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+h3 {
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Here I created the olive green dividers */
+hr {
+    clear:left;
+    margin: 20px;
+    padding: 5px;
+    border: 3px dashed darkolivegreen;
+}
+
+
+#Name {
+    font-size: 36pt;
+    color: black;
+    letter-spacing: 5pt;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#headshot {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Here I created a make-shift nav-bar */
+.links {
+    font-size: 16pt;
+    word-spacing: 15px;
+    display: inline;
+}
+
+/* Here I created a make-shift nav-bar */
+.nav-bar {
+    background-color: lightblue;
+    border: solid grey;
+}
+
+/* Here I used some text spacing editing */
+#winston {
+    line-height: 20px;
+    word-spacing: 13px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.song {
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    float: left;
+}
+
+.songs {
+    margin-bottom: 10px;
+}
+
+.album {
+    display: inline;
+    align-items: center;
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+#aboutme {
+    display: block;
+    text-align: center;
+    width: 65%;
+    line-height: 35px;
+    font-size: 12pt;
+    margin: auto;
+}
+
+.education {
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    float: left;
+}
+
+.schools {
+    display: inline;
+    text-align: center;
+    width: 33%;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+/* Here I did collapsed borders */
+.classes {
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    float: left;
+    line-height: 30px;
+    border: 5px solid black;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+/* Here I did some padding work */
+.school {
+    display: inline;
+    align-items: center;
+    width: 15%;
+    padding-left: 125px;
+    padding-right: 95px;
+    float: left;
+}
+
+
+.favorites {
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    float: left;
+}
+
+.fav {
+    display: inline;
+    align-items: center;
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+/* Here I did some custome bullet-point work */
+.favlists1 {
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    padding-left: 75px;
+    padding-right: 80px;
+    float: left;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+
+}
+
+/* Here I did some custome bullet-point work */
+.favlists2 {
+    list-style-type: lower-alpha;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    padding-left: 75px;
+    padding-right: 80px;
+    float: left;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+
+}
+
+/* Here I did some custome bullet-point work */
+.favlists3 {
+    list-style-type: square;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    padding-left: 75px;
+    padding-right: 80px;
+    float: left;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    list-style-position: inside;
+
+}
+
+.travels {
+    display: block;
+    text-align: center;
+    width: 75%;
+    line-height: 35px;
+    font-size: 14pt;
+    margin: auto;
+}
+
+/* Here I centered the two clickable photo links to my travel blog */
+.blog {
+    align-items: center;
+    width: 30%;
+    padding-left: 100px;
+    padding-right: 100px;
+    float: left;
+}
+
+/* Here I did some padding work */
+.captions {
+    display: inline;
+    text-align: center;
+    font-style: italic;
+    font-size: 13pt;
+    width: 37%;
+    padding-left: 50px;
+    padding-right: 100px;
+    float: left;
+}
+
+/* Here I did some custome bullet-point work */
+.gerry {
+    text-align: center;
+    list-style-position: inside;
+    list-style-image: url("star.gif");
+}
+
+#gerry {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
+}
+
+.backgroundgif {
+    background-image: url("gerry.png");
+}
+
+.shaq {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding-left: 10px;
+}

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html >
+<!--
+    Author: Dale Skrien
+    Course: CS325 Jan 2018
+
+    Updated by: Tony Karalekas
+    addComment.html
+
+    Worked with Shafat on PHP
+
+    GOT HELP FROM TA MARTIN
+    1/23/18
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>User Comments</title>
+    <link rel="stylesheet" type="text/css" href="addComment.css" />
+</head>
+
+<body>
+<h1>User Comments</h1>
+<div class="commentbox"><p class="usercomment">My favorite muppets are Waldorf and Statler.  Do you remember them?
+    They are the hecklers from the box seats.  Waldorf's wife's name is Astoria.</p><div class="username">Gary</div>
+    <div class="date">Sun Jan 21 2018, 3:00 am EST</div>
+</div>
+<div class="commentbox"><p class="usercomment">CS 325 is such an awesome course!  The instructor is particularly awesome.
+</p><div class="username">Dale</div><div class="date">Wed Dec 13 2017, 2:15 pm EST</div></div>
+
+<fieldset>
+    <legend>Add a comment</legend>
+    <form action="addComment.php" method="post"><div>
+        <dl>
+            <dt>Name</dt>
+            <dd><input type="text" name="username" />
+            </dd>
+            <dt>Comment</dt>
+            <dd><textarea rows="5" cols="60" name="usercomment"></textarea>
+            </dd>
+        </dl>
+        <input type="submit" value="Submit" />
+        <input type="reset" /></div>
+    </form>
+</fieldset>
+<!--validation images-->
+<div id="w3c">
+    <a href="https://validator.w3.org/">
+        <img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML5" /></a>
+    <a href="https://jigsaw.w3.org/css-validator/">
+        <img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS" /></a>
+</div>
+
+</body>
+</html>
