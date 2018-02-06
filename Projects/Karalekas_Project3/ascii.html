@@ -1,0 +1,86 @@
+<!--
+Tony Karalekas
+CS325 Web-Programming
+
+Weekly Project
+
+Project 3: "Ascii Animation Viewer"
+ascii.html
+
+Created: 1/18/17
+Last Update: 1/20/17
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCIImation</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            type="text/javascript"></script>
+
+
+    <script src="animations.js" type="text/javascript"></script>
+    <script src="gallery.js" type="text/javascript"></script>
+    <script src="myanimation.js" type="text/javascript"></script>
+    <script src="ascii.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="ascii.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<h1>CS 325 ASCII Animation Viewer</h1>
+
+<textarea id="ta" cols="80" rows="20"> </textarea>
+
+<div class="controls">
+    <fieldset>
+        <legend>Play Controls:</legend>
+        <button type="button" id="start">Start</button>
+        <button type="button" id="stop">Stop</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Animation:</legend>
+        <select id="animation">
+            <option value="Blank">Blank</option>
+            <option value="Exercise">Exercise</option>
+            <option value="Juggler">Juggler</option>
+            <option value="Bike">Bike</option>
+            <option value="Dive">Dive</option>
+            <option value="Custom">Custom</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Size:</legend>
+        <select id="size">
+            <option value="7">Tiny</option>
+            <option value="10">Small</option>
+            <option value="12" selected="selected">Medium</option>
+            <option value="16">Large</option>
+            <option value="24">Extra Large</option>
+            <option value="32">XXL</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Speed:</legend>
+        <input type="checkbox" id="turbo" value="Turbo">Turbo
+    </fieldset>
+</div>
+
+<br>
+
+
+
+<!-- Valid class for formatting the validators -->
+<div class="valid">
+    <a href="https://validator.w3.org/"><img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML5" /></a><br />
+    <a href="https://jigsaw.w3.org/css-validator/"><img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS" /></a>
+</div>
+
+
+</body>
+</html>

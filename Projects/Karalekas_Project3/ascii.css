@@ -1,0 +1,52 @@
+/*
+Tony Karalekas
+CS325 Web-Programming
+
+Weekly Project
+
+Project 3: "Ascii Animation Viewer"
+ascii.css : stylesheet for ascii.html
+
+Created: 1/18/17
+Last Update: 1/20/17
+*/
+
+body{
+    background-color: #CCCCFF;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 32pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#ta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 400px;
+    font-size: 12pt;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.controls{
+    text-align: center;
+}
+
+fieldset{
+    display: inline-block;
+    border: 5px solid black;
+    text-align: center;
+}
+
+.valid{
+    float: right;
+}

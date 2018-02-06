@@ -1,0 +1,98 @@
+/*
+Tony Karalekas
+CS325 Web-Programming
+Weekly Projects
+
+Project 1: "Granny's Pies"
+recipe.css : css stylesheet for pie.html
+
+Created: 1/10/17
+Last Update: 1/12/17
+ */
+
+body {
+    color: #404040;
+    font-family: "Georgia", "Garamond", sans-serif;
+    font-size: 11pt;
+    background-image: url("silverware.jpg");
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 0.25em;
+}
+
+.title {
+    background-color: #F0F0F0;
+    color: #A4A400;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22pt;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+}
+
+.headings {
+    background-color: #F0F0F0;
+    color: #A4A400;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 18pt;
+    font-weight: normal;
+    letter-spacing: 0.25em;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+}
+
+/* to avoid using any inline HTML style */
+.bold {
+    font-weight: bold;
+}
+
+/* to avoid using any inline HTML style */
+.strike {
+    text-decoration: line-through;
+}
+
+.quote {
+    background-color: #FFFFA8;
+    font-style: italic;
+}
+
+.links {
+    color: #A4A400;
+}
+
+
+/* TOOLTIP CSS */
+/* Tooltip help from W3 schools! :::  https://www.w3schools.com/css/css_tooltip.asp */
+/* Tooltip Container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* this puts the dotted lin under abbreviated word */
+}
+/* Tooltip Text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    /* I moved the tooltip to */
+    top: -5px;
+    left: 105%;
+    z-index: 1;
+}
+/* Hover Visibility */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.list {
+    list-style-image: url("pie-icon.gif");
+}

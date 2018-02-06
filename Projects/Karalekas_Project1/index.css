@@ -1,0 +1,205 @@
+/*
+Tony Karalekas
+CS325 Web-Programming
+Weekly Projects
+
+Project 1: "Granny's Pies"
+index.css : css stylesheet for index.html
+
+Created: 1/10/17
+Last Update: 1/12/17
+ */
+
+body {
+    background-image: url("silverware.jpg");
+}
+
+h2 {
+    background-color: #F0F0F0;
+    color: #A4A400;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 18pt;
+    font-weight: normal;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+}
+
+h3 {
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+}
+
+/* Here I created the dividers */
+hr {
+    clear:left;
+    margin: 20px;
+    padding: 5px;
+    border: 3px dashed #0f5464;
+}
+
+#title {
+    font-size: 36pt;
+    color: #A4A400;
+    letter-spacing: 5pt;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#granny {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutme {
+    display: block;
+    text-align: center;
+    width: 65%;
+    line-height: 35px;
+    font-size: 12pt;
+    margin: auto;
+}
+
+.banner {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+/* Here I created a make-shift nav-bar */
+.links {
+    font-size: 16pt;
+    word-spacing: 15px;
+    display: inline;
+}
+.nav-bar {
+    background-color: #FFFFA8;
+    border: solid #0f5464;
+}
+
+
+/* Here I used some text spacing editing */
+.quote {
+    line-height: 20px;
+    word-spacing: 13px;
+    letter-spacing: 6px;
+    text-align: center;
+    color: red;
+}
+
+
+.pie {
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    float: left;
+}
+.pies {
+    margin-bottom: 10px;
+}
+.piepic {
+    display: inline;
+    align-items: center;
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+
+/* Here I centered the a clickable photo link to my pie.html  */
+.lmpie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.caption {
+    clear: left;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+}
+
+
+/* to avoid using any inline HTML style */
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+
+
+.contact {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.location {
+    text-align: center;
+    color: #0f5464;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16pt;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+}
+
+.locations {
+    text-align: center;
+    list-style-position: inside;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+    font-size: 14pt;
+}
+
+.list {
+    line-height: 25pt;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+    font-size: 12pt;
+    list-style-image: url("pie-icon.gif");
+}
+
+.baker {
+    text-align: center;
+    color: #0f5464;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16pt;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+}
+
+.bakers {
+    text-align: center;
+    margin: auto;
+    border: solid black;
+}
+
+.spacing {
+    line-height: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
+}
+
+

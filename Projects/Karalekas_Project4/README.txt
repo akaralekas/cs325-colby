@@ -1,0 +1,1 @@
+For grader, I renamed index.html to main.html so I could see the contents of my server folder.
