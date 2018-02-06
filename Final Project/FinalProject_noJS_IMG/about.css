@@ -1,0 +1,202 @@
+
+/*
+Tony Karalekas and Gerry Nvule
+CS325: Web-Programming
+Professor Dale Skrien
+
+Final Project
+about.css file
+
+Created: 1/23/18
+Last Updated: 1/31/18
+*
+*/
+body {
+    padding-top: 54px;
+}
+
+
+#about_page{
+    text-align: center;
+
+}
+
+#about_pageh1{
+    text-align: center;
+}
+
+#about_picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 5px;
+
+}
+
+#Join{
+
+    text-align:center;
+}
+
+#corley_hughes{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#corley_p{
+
+    text-align:center;
+}
+
+#corley{
+    text-align:center;
+}
+#katie_muto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#katie{
+    text-align:center;
+}
+
+#katie_m{
+
+    text-align:center;
+}
+
+#madison{
+    text-align: center
+
+}
+
+#madison_g{
+    text-align:center;
+}
+
+#madison_gouzie{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#said{
+    text-align:center;
+}
+
+#said_p{
+
+    text-align:center;
+}
+
+#said_eastman{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#maddie{
+    text-align: center;
+}
+
+#maddie_p{
+
+    text-align:center;
+}
+
+#maddie_purcell{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: rgba(70, 65, 67, 0.76);
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #78787a;
+    color: white !important
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
